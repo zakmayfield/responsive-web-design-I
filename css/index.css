@@ -1,3 +1,395 @@
-/* Use your own code or past solution for Great Idea Web Page CSS here! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+/*RESET*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	max-width: 100%;
+	border: none;
+}
+
+
+
+/****************MAIN page*******************/
+
+/*header / nav / nav items*/
+
+header{
+	/* position: fixed;
+	top: 0; */
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	width: 100%;
+	height: 10vh;
+
+	background: whitesmoke;
+}
+
+nav{
+	width: 100%;
+	margin: 0 2%;
+	display: flex;
+	
+	align-items: center;
+	justify-content: space-between;
+}
+
+.nav-list{
+	display: flex;
+	justify-content: space-evenly;
+
+	width: 75%;
+}
+
+.nav-list a{
+	font-family: 'Amatic SC', cursive;
+	font-size: 2rem;
+	font-weight: 800;
+	text-decoration: none;
+	color: black;
+
+	border: 1px solid black;
+	border-radius: 10px;
+	padding: 5px 20px;
+}
+
+.nav-list a:hover{
+	background: rgba(207, 207, 207, 0.479);
+	/* font-size: 2.3rem; */
+	box-shadow: 0px 5px 5px #888;
+	transform: scale(1.1);
+	transition: 200ms;
+}
+
+.nav-logo{
+	display: flex;
+	justify-content: center;
+
+	width: 20%;
+}
+
+
+/*Top Section*/
+
+h1{
+	/*Innovation On Demand font size*/
+	font-size: 5rem;
+}
+
+.top-section{
+	/*Both left and right sections centered with space around*/
+	/*also added a margin of top and bottom to be 5vh*/
+	display: flex;
+	justify-content: space-around;
+
+	margin-top: 5vh;
+	margin-bottom: 5vh;
+}
+
+.top-section-left{
+	/*made to column, then justified to center*/
+	display: flex;
+	flex-flow: column;
+	justify-content: space-around;
+}
+.top-section-btn{
+	align-self: center;
+}
+.top-section-btn a{
+	text-decoration: none;
+	color: black;
+	font-size: 2rem;
+	font-family: 'Amatic SC', cursive;
+	font-weight: 900;
+
+	border: 2px solid black;
+	border-radius: 10px;
+	padding: 5px 30px;
+}
+.top-section-btn a:hover{
+	background: rgba(207, 207, 207, 0.479);
+	box-shadow: 0px 5px 5px #888;
+	transition: 200ms;
+}
+
+.top-section-header{
+	/*text aligning a block lvl element*/
+	text-align: center;
+}
+
+.top-section-right{
+	display: flex;
+}
+
+
+
+/*Bottom section / bottom-top left and right*/
+
+h2{
+	font-size: 1.75rem;
+}
+
+p{
+	font-size: 1.2rem;
+	line-height: 1.2;
+}
+
+.bottom-section-top{
+	display: flex;
+	justify-content: space-around;
+	margin-top: 5vh;
+	margin-bottom: 5vh;
+}
+
+.bottom-section-top-left{
+	width: 40%;
+}
+
+.bottom-section-top-right{
+	widows: 40%;	
+}
+
+
+.bottom-section-mid{
+	display: flex;
+	justify-content: center;
+}
+
+.middle-img{
+	width: 90%;
+	margin-bottom: 5vh;
+}
+
+.bottom-section-lower{
+	display: flex;
+	justify-content: space-around;
+	align-items: flex-start;
+
+	margin-top: 5vh;
+	margin-bottom: 5vh;
+}
+
+.bottom-section-lower > article{
+	width: 23%;
+}
+
+
+
+
+/*Contact*/
+
+.contact{
+	display: flex;
+	justify-content: flex-start;
+	margin-top: 5vh;
+	margin-left: 10vw;
+}
+
+
+
+
+/*Footer*/
+
+footer{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	height: 20vh;
+}
+
+
+
+
+/*Line Break Styles*/
+
+.line-break-container{
+	display: flex;
+	justify-content: center;
+}
+
+.line-break{
+	width: 90%;
+	height: 1px;
+
+	background: black;
+}
+
+
+
+
+
+
+
+
+
+
+
+/**********SERVICES PAGE***********/
+
+.services-top{
+	display: flex;
+	flex-flow: column;
+	align-items: center;
+
+	width: 100%;
+}
+
+.services-top-upper{
+	width: 90%;
+}
+
+.services-header-img{
+	width: 100%;
+}
+
+h1{
+	font-size: 3rem;
+}
+
+.services-top-lower{
+	width: 90%;
+	margin-top: 5vh;
+}
+
+.service-line-break{
+	margin: 5vh 0;
+}
+
+
+
+
+/*Main*/
+
+.services-main{
+	display: flex;
+	justify-content: center;
+	margin-bottom: 5vh;
+}
+
+.services-container{
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+	width: 90%;
+}
+
+.service-card{
+	border: 1px solid black;
+	background: rgb(206, 206, 206);
+
+	width: 48%;
+	margin-bottom: 5vh;
+	padding: 2%;
+}
+
+.service-card p{
+	margin-bottom: 2vh;
+}
+
+.service-learn-btn{
+	border: 1px solid black;
+	border-radius: 8px;
+	padding: 1% 4%;
+	text-decoration: none;
+	color: black;
+	font-size: 0.85rem;
+	background: whitesmoke;
+}
+
+/*Bottom*/
+
+.services-bottom{
+	display: flex;
+	justify-content: center;
+	
+	margin-top: 5vh;
+}
+
+.services-bottom-container{
+	display: flex;
+	justify-content: space-between;
+	width: 90%;
+}
+
+.services-bottom-left{
+	width: 48%;
+	display: flex;
+	flex-flow: column;
+	justify-content: space-between;
+}
+
+.services-bottom-left ul{
+	width: 40%;
+	list-style: square;
+	margin-left: 4%;
+	margin-top: 2vh;
+}
+
+.services-bottom-right{
+	width: 48%;
+}
+
 
 
