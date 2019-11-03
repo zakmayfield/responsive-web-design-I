@@ -439,7 +439,7 @@ h1{
     border-radius: 0;
     width: 100%;
     padding: 10px;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     border-top: 2px solid rgba(128, 128, 128, 0.50);
   }
 
@@ -450,5 +450,40 @@ h1{
 
   .top-section-btn{
     margin-top: 2vh;
+  }
+
+
+
+  .bottom-section{
+    width: 100%;
+  }
+
+  .bottom-section-top{
+    flex-flow: column;
+    align-items: center;
+  }
+
+  .bottom-section-top-left{
+    width: 90%;
+    margin: 2vh;
+  }
+
+
+
+  .bottom-section-lower{
+    flex-flow: column;
+    align-items: center;
+  }
+
+  .bottom-section-lower > article{
+    width: 90%;
+  }
+
+  .bottom-section-lower-mid{
+    margin-top: 5vh;
+  }
+
+  .bottom-section-lower-right{
+    margin-top: 5vh;
   }
 }
