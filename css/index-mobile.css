@@ -396,27 +396,11 @@ h1{
 
 
 
-
-
-@media(max-width: 800px){
-  div.top-section-right{
-    display: none;
-  }
-  .nav-list a{
-    font-size: 1.2rem;
-    padding: 2px 10px;
-  }
-
-  .top-section-btn{
-    margin-top: 2vh;
-  }
-}
-
-@media(max-width: 500px){
+@media(min-width: 500px){
   header{
     height: auto;
     background: white;
-    align-items: flex-start;
+		align-items: flex-start;
   }
 
   nav{
@@ -450,13 +434,13 @@ h1{
   }
 
   .nav-logo{
-    margin-bottom: 2vh;
-    width: 30%;
-  }
+		margin-bottom: 2vh;
+    width: 100%;
+	}
+	
 
   .top-section-btn{
-    margin-top: 2vh;
-    
+    margin-top: 2.5vh;
   }
 
 
@@ -500,3 +484,20 @@ h1{
     /* font-family: 'Titillium Web', sans-serif; */
   }
 }
+
+
+
+@media(min-width: 800px){
+  div.top-section-right{
+    display: none;
+  }
+  .nav-list a{
+    font-size: 1.2rem;
+    padding: 2px 10px;
+  }
+
+  .top-section-btn{
+    margin-top: 2vh;
+  }
+}
+
