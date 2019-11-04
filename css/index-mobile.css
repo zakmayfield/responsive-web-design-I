@@ -400,7 +400,7 @@ h1{
   header{
     height: auto;
     background: white;
-    align-items: flex-start;
+		align-items: flex-start;
   }
 
   nav{
@@ -434,13 +434,13 @@ h1{
   }
 
   .nav-logo{
-    margin-bottom: 2vh;
-    width: 30%;
-  }
+		margin-bottom: 2vh;
+    width: 100%;
+	}
+	
 
   .top-section-btn{
-    margin-top: 2vh;
-    
+    margin-top: 2.5vh;
   }
 
 
